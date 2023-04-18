@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="question_1">Question - 1</string>
+    <string name="question">React Native 0.71-RC0 Android outage postmortem?</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="next_btn">Next</string>
+    <string name="prev_btn">Previous</string>
+</resources>
