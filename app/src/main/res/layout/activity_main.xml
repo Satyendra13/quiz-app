@@ -1,118 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/question_1"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:textColor="@color/black"
+                android:text="@string/question"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/custom_btn"
+                android:padding="12dp"
+                android:text="@string/option_1" />
+
+            <Button
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/custom_btn"
+                android:padding="12dp"
+                android:text="@string/option_2" />
+
+            <Button
+                android:id="@+id/option_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/custom_btn"
+                android:padding="12dp"
+                android:text="@string/option_3" />
+
+            <Button
+                android:id="@+id/option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/custom_btn"
+                android:padding="12dp"
+                android:text="@string/option_4" />
+        </LinearLayout>
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginVertical="16dp"
         android:gravity="center"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="6dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/custom_btn"
+            android:text="@string/prev_btn" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="600dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/app_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:text="@string/question_1"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/question"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="22dp"
-                    android:text="@string/question"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
-
-
-                <Button
-                    android:id="@+id/option_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="16dp"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginEnd="22dp"
-                    android:padding="12dp"
-                    android:background="@drawable/custom_btn"
-                    android:text="@string/option_1" />
-
-                <Button
-                    android:id="@+id/option_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="16dp"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginEnd="22dp"
-                    android:padding="12dp"
-                    android:background="@drawable/custom_btn"
-                    android:text="@string/option_2" />
-
-                <Button
-                    android:id="@+id/option_3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="16dp"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginEnd="22dp"
-                    android:padding="12dp"
-                    android:background="@drawable/custom_btn"
-                    android:text="@string/option_3" />
-
-                <Button
-                    android:id="@+id/option_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="16dp"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginEnd="22dp"
-                    android:padding="12dp"
-                    android:background="@drawable/custom_btn"
-                    android:text="@string/option_4" />
-            </LinearLayout>
-        </ScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginVertical="16dp"
-            android:gravity="center"
-            >
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/option_5"
-                android:layout_marginVertical="16dp"
-                android:text="@string/prev_btn"
-                android:padding="12dp"
-                android:background="@drawable/custom_btn"
-                android:layout_marginStart="22dp"
-                android:layout_marginEnd="22dp"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/option_6"
-                android:layout_marginVertical="16dp"
-                android:text="@string/next_btn"
-                android:padding="12dp"
-                android:background="@drawable/custom_btn"
-                android:layout_marginStart="22dp"
-                android:layout_marginEnd="22dp"
-                />
-        </LinearLayout>
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="6dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/custom_btn"
+            android:text="@string/next_btn" />
     </LinearLayout>
-</layout>
+</LinearLayout>
