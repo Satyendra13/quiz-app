@@ -12,6 +12,15 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Results"
+            android:exported="false" />
+        <activity
+            android:name=".Questions"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
